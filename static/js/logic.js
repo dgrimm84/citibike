@@ -115,7 +115,7 @@ function createMap(stations) {
 function createMarker(station, status, iconFilter) {
   // Set the icon for Citi Bike (the same icon for all statuses)
   const citibikeIcon = L.icon({
-    iconUrl: "https://images.ctfassets.net/p6ae3zqfb1e3/1rbjR48QnBe6cL8Ti6tPmV/08f9e1a62a6ef6ec1cddc4bc5a12f8d1/imageedit_2_9337177880.png?w=1500&q=60&fm=",  // Replace with your actual Citi Bike icon path
+    iconUrl: "https://images.ctfassets.net/p6ae3zqfb1e3/1rbjR48QnBe6cL8Ti6tPmV/08f9e1a62a6ef6ec1cddc4bc5a12f8d1/imageedit_2_9337177880.png?w=1500&q=60&fm=", 
     iconSize: [120, 60],  // Adjust the size if necessary
     iconAnchor: [16, 32], // Anchor the icon to the center bottom
     popupAnchor: [0, -32], // Adjust popup position
@@ -134,9 +134,9 @@ function createMarker(station, status, iconFilter) {
 
   // Bind a popup with station information
   marker.bindPopup(`
-    <h3>${station.name}</h3>
-    <p>Status: ${status}</p>
-    <p>Bikes Available: ${station.num_bikes_available}</p>
+    <h3 style="font-size: 18px;">${station.name}</h3>
+    <p style="font-size: 16px;">Status: ${status}</p>
+    <p style="font-size: 16px;">Bikes Available: ${station.num_bikes_available}</p>
   `);
 
   return marker;
