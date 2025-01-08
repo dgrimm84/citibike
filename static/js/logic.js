@@ -134,9 +134,9 @@ function createMarker(station, status, iconFilter) {
 
   // Bind a popup with station information
   marker.bindPopup(`
-    <h3>${station.name}</h3>
-    <p>Status: ${status}</p>
-    <p>Bikes Available: ${station.num_bikes_available}</p>
+    <h3 style="font-size: 18px;">${station.name}</h3>
+    <p style="font-size: 16px;">Status: ${status}</p>
+    <p style="font-size: 16px;">Bikes Available: ${station.num_bikes_available}</p>
   `);
 
   return marker;
